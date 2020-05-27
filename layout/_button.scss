@@ -1,0 +1,19 @@
+.btn {
+  background-color: $mainRed;
+  padding: 1.3rem 2.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: inherit;
+  letter-spacing: 2px;
+
+  display: inline-block;
+  margin-top: 1.5rem;
+
+  transition: background-color 200ms ease-in;
+
+  &:hover {
+    background-color: $darkRed;
+  }
+}
