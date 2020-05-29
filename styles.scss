@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600;700&display=swap');
 
 // File imports
+@import './layout/mixins';
 @import './modules/variables';
 @import './modules/global';
 @import './layout/wrapper';
@@ -13,3 +14,4 @@
 @import './layout/sectionTitle';
 @import './layout/paragraph';
 @import './modules/services';
+@import './modules/footer';

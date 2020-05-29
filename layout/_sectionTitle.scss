@@ -5,6 +5,14 @@
   font-size: 4rem;
   font-weight: bold;
   padding-bottom: 3rem;
+
+  @include largePhone {
+    font-size: 3.7rem;
+  }
+
+  @include smallPhone {
+    font-size: 3rem;
+  }
 }
 
 .section-subtitle {

@@ -9,6 +9,14 @@
   &__box {
     position: relative;
 
+    @include desktop {
+      padding: 0 2rem;
+    }
+
+    @include smallPhone {
+      padding: 0 1rem;
+    }
+
     &:nth-child(2) {
       margin: 8rem 0;
     }
@@ -24,8 +32,23 @@
     top: -4rem;
     left: -3rem;
 
+    @include desktop {
+      position: static;
+      font-size: 5.8rem;
+      color: $mainBlue;
+    }
+
+    @include largePhone {
+      font-size: 2.9rem;
+      margin-bottom: 1.5rem;
+    }
+
     &__bullet {
       color: rgba($color: $mainRed, $alpha: 0.6);
+
+      @include desktop {
+        display: none;
+      }
     }
   }
 
@@ -33,5 +56,13 @@
     width: 80%;
     margin: 0 auto;
     font-size: 2.5rem;
+
+    @include desktop {
+      width: 100%;
+    }
+
+    @include largePhone {
+      font-size: 2rem;
+    }
   }
 }
